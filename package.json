@@ -5,6 +5,17 @@
     "name": "brian <admin@wayearn.com>",
     "url": "https://github.com/toimc"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/toimc-ui.es.js",
+      "require": "./dist/toimc-ui.umd.js"
+    }
+  },
+  "main": "./dist/toimc-ui.umd.js",
+  "module": "./dist/toimc-ui.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "npm run typecheck && vite build",
     "commit": "git-cz",

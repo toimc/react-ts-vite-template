@@ -10,9 +10,9 @@ module.exports = {
     "declaration-colon-space-before": "never",
     // 要求在声明的冒号后有一个空格或不允许有白字。
     "declaration-colon-space-after": "always-single-line",
-    // 颜色指定大写
+    // 颜色指定大写 -> lower -> 所有的大写变成小写
     "color-hex-case": "lower",
-    // 颜色6位长度
+    // 颜色6位长度 #333 #fff
     "color-hex-length": "long",
     // 兼容自定义标签名
     "selector-type-no-unknown": [
