@@ -176,4 +176,6 @@ out
 .yarn/install-state.gz
 .pnp.*
 
+docs/
+
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains,macos,node

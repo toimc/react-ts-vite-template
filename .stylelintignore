@@ -1,4 +1,7 @@
-/dist/*
-/public/*
+dist/*
 public/*
 coverage/*
+node_modules/
+.husky/
+__mocks__/
+docs/

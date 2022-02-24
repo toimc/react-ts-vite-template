@@ -1,5 +1,6 @@
 import legacy from "@vitejs/plugin-legacy";
 import reactRefresh from "@vitejs/plugin-react-refresh";
+import path from "path";
 import { fileURLToPath } from "url";
 import { defineConfig } from "vite";
 
@@ -27,7 +28,22 @@ export default defineConfig({
       },
     },
   },
-  preview: {
-    port: 3000,
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, "src/components/index.tsx"),
+      name: "ToimcUI",
+      fileName: format => `toimc-ui.${format}.js`,
+    },
+    rollupOptions: {
+      // 确保外部化处理那些你不想打包进库的依赖
+      external: ["react", "react-dom"],
+      output: {
+        // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+        },
+      },
+    },
   },
 });

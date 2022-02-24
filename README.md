@@ -13,13 +13,14 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 - [ESLint](https://eslint.org)
 - [Prettier](https://prettier.io)
 - [Polyfills](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy#readme)
+- [Sass](https://sass-lang.com/)
 
 ## Getting started
 
 1. Create the project.
 
    ```bash
-   npx degit fabien-ml/react-ts-vite-template my-app
+   npx degit toimc/react-ts-vite-template my-app
    ```
 
 2. Access the project directory.
@@ -62,6 +63,9 @@ npm run lint
 
 ```bash
 npm run build
+
+# build your lib library
+npm run build:lib
 ```
 
 ### Run the app in production mode at http://localhost:3000.
